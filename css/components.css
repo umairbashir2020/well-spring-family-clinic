@@ -648,7 +648,7 @@
 }
 
 /* Social Media Icons (Optional - Add if you want) */
-.footer-social {
+/* .footer-social {
     display: flex;
     gap: 1rem;
     margin-top: 1.5rem;
@@ -673,10 +673,10 @@
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
     color: var(--accent-color);
-}
+} */
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .footer {
         padding: 3rem 0 1rem;
     }
@@ -717,11 +717,34 @@
     .footer-content {
         gap: 2rem;
     }
-}
+} */
 /* new footer ends */
 
 /* Page Header */
 .page-header {
+    background: linear-gradient(135deg, rgba(44, 127, 184, 0.85) 0%, rgba(29, 90, 131, 0.85) 100%), 
+        url('https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80') center/cover no-repeat;
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.page-header h1 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* .page-header {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: white;
     padding: 4rem 0;
@@ -736,7 +759,7 @@
 .page-header p {
     font-size: 1.2rem;
     opacity: 0.9;
-}
+} */
 
 /* Section Titles */
 .section-title {
