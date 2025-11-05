@@ -1,0 +1,38 @@
+/* Animation Classes - SAFE VERSION */
+.animate-on-scroll {
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-on-scroll.fade-in-start {
+    opacity: 0;
+}
+
+.animate-on-scroll.slide-up-start {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Hover Animations */
+.service-card, .team-member, .service-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover, .team-member:hover, .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effects */
+.cta-button, .calculate-btn, .submit-btn {
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover, .calculate-btn:hover, .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}

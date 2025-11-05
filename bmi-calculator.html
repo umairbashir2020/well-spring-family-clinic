@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate your Body Mass Index (BMI) with our easy-to-use tool and learn about healthy weight ranges">
+    <title>BMI Calculator - WellSpring Family Clinic</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/animations.css"> -->
+     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/bmi-calculator.css">
+    <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>WellSpring Family Clinic</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="bmi-calculator.html" class="nav-link active">BMI Calculator</a>
+                <a href="appointment.html" class="nav-link">Appointment</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="animate-on-scroll">BMI Calculator</h1>
+            <p class="animate-on-scroll">Check your Body Mass Index and learn about healthy weight ranges</p>
+        </div>
+    </section>
+
+    <section class="bmi-calculator">
+        <div class="container">
+            <div class="calculator-container animate-on-scroll">
+                <div class="calculator-form">
+                    <h2>Calculate Your BMI</h2>
+                    <form id="bmiForm">
+                        <div class="form-group">
+                            <label for="height">Height</label>
+                            <div class="input-with-unit">
+                                <input type="number" id="height" step="0.01" min="0" required>
+                                <select id="heightUnit">
+                                    <option value="cm">cm</option>
+                                    <option value="m">m</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weight">Weight</label>
+                            <div class="input-with-unit">
+                                <input type="number" id="weight" step="0.1" min="0" required>
+                                <span class="unit">kg</span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="calculate-btn">Calculate BMI</button>
+                    </form>
+                </div>
+                
+                <div class="calculator-result" id="resultSection" style="display: none;">
+                    <h2>Your BMI Result</h2>
+                    <div class="bmi-value" id="bmiValue"></div>
+                    <div class="bmi-category" id="bmiCategory"></div>
+                    <div class="bmi-description" id="bmiDescription"></div>
+                    <button class="reset-btn" id="resetBtn">Calculate Again</button>
+                </div>
+            </div>
+            
+            <div class="bmi-info animate-on-scroll">
+                <h2>Understanding BMI</h2>
+                <p>Body Mass Index (BMI) is a measure of body fat based on your weight in relation to your height. It's a useful screening tool to identify potential weight problems for adults.</p>
+                
+                <div class="bmi-categories">
+                    <div class="category-item">
+                        <div class="category-color underweight"></div>
+                        <h3>Underweight</h3>
+                        <p>BMI less than 18.5</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-color normal"></div>
+                        <h3>Normal weight</h3>
+                        <p>BMI 18.5 - 24.9</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-color overweight"></div>
+                        <h3>Overweight</h3>
+                        <p>BMI 25 - 29.9</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-color obese"></div>
+                        <h3>Obese</h3>
+                        <p>BMI 30 or greater</p>
+                    </div>
+                </div>
+                
+                <div class="disclaimer">
+                    <h3>Important Note</h3>
+                    <p>BMI is a screening tool and does not directly measure body fat. It may not accurately reflect body fatness in athletes, older adults, or individuals with particularly muscular builds. For a comprehensive health assessment, please consult with our healthcare professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WellSpring Family Clinic</h3>
+                    <p>Your trusted community health partner since 2024.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>123 Health Street, Medical City</p>
+                    <p>Phone: (02) 9876 5432</p>
+                    <p>Email: info@wellspringclinic.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WellSpring Family Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bmi-calculator.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

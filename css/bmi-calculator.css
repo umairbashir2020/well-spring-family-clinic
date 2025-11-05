@@ -1,0 +1,120 @@
+/* BMI Calculator */
+.bmi-calculator {
+    padding: 5rem 0;
+}
+
+.calculator-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.calculator-form, .calculator-result {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.calculator-form h2, .calculator-result h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.bmi-value {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: var(--primary-color);
+}
+
+.bmi-category {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.bmi-description {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.bmi-info h2 {
+    margin-bottom: 1.5rem;
+}
+
+.bmi-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.category-item {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    background: white;
+    box-shadow: var(--box-shadow);
+}
+
+.category-color {
+    width: 60px;
+    height: 10px;
+    margin: 0 auto 1rem;
+    border-radius: 5px;
+}
+
+.underweight {
+    background-color: #5bc0de;
+}
+
+.normal {
+    background-color: #5cb85c;
+}
+
+.overweight {
+    background-color: #f0ad4e;
+}
+
+.obese {
+    background-color: #d9534f;
+}
+
+.disclaimer {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.disclaimer h3 {
+    color: #856404;
+    margin-bottom: 0.5rem;
+}
+
+.disclaimer p {
+    color: #856404;
+    margin-bottom: 0;
+}
+
+/* BMI Calculator Responsive */
+@media (max-width: 992px) {
+    .calculator-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .calculator-form, .calculator-result {
+        padding: 1.5rem;
+    }
+    
+    .bmi-categories {
+        grid-template-columns: 1fr;
+    }
+}

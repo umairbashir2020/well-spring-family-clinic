@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request an appointment at WellSpring Family Clinic - Your health is our priority">
+    <title>Request Appointment - WellSpring Family Clinic</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/animations.css"> -->
+     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/appointment.css">
+    <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>WellSpring Family Clinic</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="bmi-calculator.html" class="nav-link">BMI Calculator</a>
+                <a href="appointment.html" class="nav-link active">Appointment</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="animate-on-scroll">Request an Appointment</h1>
+            <p class="animate-on-scroll">Schedule your visit with our healthcare professionals</p>
+        </div>
+    </section>
+
+    <section class="appointment-form-section">
+        <div class="container">
+            <div class="form-container animate-on-scroll">
+                <form id="appointmentForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferredDate">Preferred Date *</label>
+                        <input type="date" id="preferredDate" name="preferredDate" required>
+                        <span class="error-message" id="dateError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferredTime">Preferred Time</label>
+                        <select id="preferredTime" name="preferredTime">
+                            <option value="">Any time</option>
+                            <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                            <option value="afternoon">Afternoon (12:00 PM - 5:00 PM)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="serviceType">Service Required</label>
+                        <select id="serviceType" name="serviceType">
+                            <option value="">Select a service</option>
+                            <option value="general">General Consultation</option>
+                            <option value="pediatric">Pediatric Care</option>
+                            <option value="immunization">Immunization</option>
+                            <option value="checkup">Health Check-up</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Please provide any additional details about your appointment needs..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Request Appointment</button>
+                </form>
+                
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <h3>Appointment Request Submitted Successfully!</h3>
+                    <p>Thank you for your appointment request. We will contact you within 24 hours to confirm your appointment details.</p>
+                    <button id="newRequestBtn" class="cta-button">Submit Another Request</button>
+                </div>
+            </div>
+            
+            <div class="appointment-info animate-on-scroll">
+                <h2>What to Expect</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>Confirmation</h3>
+                        <p>Our staff will contact you within 24 hours to confirm your appointment time and date.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Preparation</h3>
+                        <p>Please bring your Medicare card and any relevant medical documents to your appointment.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Cancellation</h3>
+                        <p>If you need to cancel or reschedule, please notify us at least 24 hours in advance.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>New Patients</h3>
+                        <p>New patients are welcome! Please arrive 15 minutes early to complete registration forms.</p>
+                    </div>
+                </div>
+                
+                <div class="emergency-notice">
+                    <h3>Emergency Situations</h3>
+                    <p>If you are experiencing a medical emergency, please call 000 immediately or go to your nearest hospital emergency department.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WellSpring Family Clinic</h3>
+                    <p>Your trusted community health partner since 2024.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>123 Health Street, Medical City</p>
+                    <p>Phone: (02) 9876 5432</p>
+                    <p>Email: info@wellspringclinic.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WellSpring Family Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Appointment form handling
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic validation
+            let isValid = true;
+            const name = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('preferredDate').value;
+            
+            // Reset errors
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('phoneError').textContent = '';
+            document.getElementById('dateError').textContent = '';
+            
+            // Name validation
+            if (name.trim().length < 2) {
+                document.getElementById('nameError').textContent = 'Please enter your full name';
+                isValid = false;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email address';
+                isValid = false;
+            }
+            
+            // Phone validation (Australian format)
+            const phoneRegex = /^(\+?61|0)[2-478](?:[ -]?[0-9]){8}$/;
+            if (!phoneRegex.test(phone.replace(/\s/g, ''))) {
+                document.getElementById('phoneError').textContent = 'Please enter a valid Australian phone number';
+                isValid = false;
+            }
+            
+            // Date validation
+            const selectedDate = new Date(date);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            
+            if (!date || selectedDate < today) {
+                document.getElementById('dateError').textContent = 'Please select a valid future date';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // In a real application, you would send this data to a server
+                // For this demo, we'll just show the success message
+                document.getElementById('appointmentForm').style.display = 'none';
+                document.getElementById('successMessage').style.display = 'block';
+            }
+        });
+        
+        // Reset form for new request
+        document.getElementById('newRequestBtn').addEventListener('click', function() {
+            document.getElementById('appointmentForm').reset();
+            document.getElementById('appointmentForm').style.display = 'block';
+            document.getElementById('successMessage').style.display = 'none';
+        });
+        
+        // Set minimum date to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('preferredDate').setAttribute('min', today);
+    </script>
+</body>
+</html>

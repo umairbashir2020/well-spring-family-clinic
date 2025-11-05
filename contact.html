@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact WellSpring Family Clinic - Get in touch with our healthcare team for appointments and inquiries">
+    <title>Contact Us - WellSpring Family Clinic</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/animations.css"> -->
+     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>WellSpring Family Clinic</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="bmi-calculator.html" class="nav-link">BMI Calculator</a>
+                <a href="appointment.html" class="nav-link">Appointment</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="animate-on-scroll">Contact Us</h1>
+            <p class="animate-on-scroll">Get in touch with our healthcare team</p>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <h2>Our Location</h2>
+                    <div class="contact-item">
+                        <h3>Address</h3>
+                        <p>123 Health Street<br>Medical City, NSW 2000<br>Australia</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p>(02) 9876 5432</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>info@wellspringclinic.com</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Clinic Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
+                           Saturday: 9:00 AM - 2:00 PM<br>
+                           Sunday: Emergency Only</p>
+                    </div>
+                    
+                    <div class="map-placeholder">
+                        <h3>Find Us</h3>
+                        <div class="map-container">
+                            <p>Interactive Map Would Appear Here</p>
+                            <p>123 Health Street, Medical City</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container animate-on-scroll">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Full Name *</label>
+                            <input type="text" id="contactName" name="contactName" required>
+                            <span class="error-message" id="contactNameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address *</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required>
+                            <span class="error-message" id="contactEmailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="contactPhone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="6" required placeholder="Please type your message here..."></textarea>
+                            <span class="error-message" id="contactMessageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    
+                    <div id="contactSuccessMessage" class="success-message" style="display: none;">
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for contacting us. We will respond to your message as soon as possible.</p>
+                        <button id="newMessageBtn" class="cta-button">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WellSpring Family Clinic</h3>
+                    <p>Your trusted community health partner since 2024.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>123 Health Street, Medical City</p>
+                    <p>Phone: (02) 9876 5432</p>
+                    <p>Email: info@wellspringclinic.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WellSpring Family Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contact-form.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
