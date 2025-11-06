@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Calculate your Body Mass Index (BMI) with our easy-to-use tool and learn about healthy weight ranges">
     <title>BMI Calculator - WellSpring Family Clinic</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <!-- <link rel="stylesheet" href="css/animations.css"> -->
      <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/bmi-calculator.css">
@@ -43,58 +41,14 @@
 
     <section class="bmi-calculator">
         <div class="container">
-
             <div class="calculator-container animate-on-scroll">
-            <div class="calculator-form">
-                <h2>Calculate Your BMI</h2>
-                <form id="bmiForm">
-                    <div class="form-group">
-                        <label for="height">Height</label>
-                        <div class="input-with-unit">
-                            <input type="number" id="height" step="0.01" min="0" required placeholder="e.g., 175" value="">
-                            <select id="heightUnit">
-                                <option value="cm">cm</option>
-                                <option value="m">m</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="weight">Weight</label>
-                        <div class="input-with-unit">
-                            <input type="number" id="weight" step="0.1" min="0" required placeholder="e.g., 70" value="">
-                            <span class="unit">kg</span>
-                        </div>
-                    </div>
-                    
-                    <button type="submit" class="calculate-btn">Calculate BMI</button>
-                </form>
-            </div>
-    
-            <div class="calculator-result" id="resultSection">
-                <div class="result-placeholder" id="resultPlaceholder">
-                    <div class="placeholder-image">📊</div>
-                    <h3>Your BMI Result Awaits</h3>
-                    <p>Enter your height and weight to calculate your Body Mass Index and get personalized health insights.</p>
-                </div>
-                
-                <div class="result-content" id="resultContent" style="display: none;">
-                    <h2>Your BMI Result</h2>
-                    <div class="bmi-value" id="bmiValue"></div>
-                    <div class="bmi-category" id="bmiCategory"></div>
-                    <div class="bmi-description" id="bmiDescription"></div>
-                    <button class="reset-btn" id="resetBtn">Calculate Again</button>
-                </div>
-            </div>
-        </div>
-            <!-- <div class="calculator-container animate-on-scroll">
                 <div class="calculator-form">
                     <h2>Calculate Your BMI</h2>
                     <form id="bmiForm">
                         <div class="form-group">
                             <label for="height">Height</label>
                             <div class="input-with-unit">
-                                <input type="number" id="height" step="0.01" min="0" required>
+                                <input type="number" id="height" step="0.01" min="0" required placeholder="e.g., 175" value="">
                                 <select id="heightUnit">
                                     <option value="cm">cm</option>
                                     <option value="m">m</option>
@@ -105,7 +59,7 @@
                         <div class="form-group">
                             <label for="weight">Weight</label>
                             <div class="input-with-unit">
-                                <input type="number" id="weight" step="0.1" min="0" required>
+                                <input type="number" id="weight" step="0.1" min="0" required placeholder="e.g., 70" value="">
                                 <span class="unit">kg</span>
                             </div>
                         </div>
@@ -113,82 +67,55 @@
                         <button type="submit" class="calculate-btn">Calculate BMI</button>
                     </form>
                 </div>
-                
-                <div class="calculator-result" id="resultSection" style="display: none;">
-                    <h2>Your BMI Result</h2>
-                    <div class="bmi-value" id="bmiValue"></div>
-                    <div class="bmi-category" id="bmiCategory"></div>
-                    <div class="bmi-description" id="bmiDescription"></div>
-                    <button class="reset-btn" id="resetBtn">Calculate Again</button>
+    
+                <div class="calculator-result" id="resultSection">
+                    <div class="result-placeholder" id="resultPlaceholder">
+                        <div class="placeholder-image">📊</div>
+                        <h3>Your BMI Result Awaits</h3>
+                        <p>Enter your height and weight to calculate your Body Mass Index and get personalized health insights.</p>
+                    </div>
+                    
+                    <div class="result-content" id="resultContent" style="display: none;">
+                        <h2>Your BMI Result</h2>
+                        <div class="bmi-value" id="bmiValue"></div>
+                        <div class="bmi-category" id="bmiCategory"></div>
+                        <div class="bmi-description" id="bmiDescription"></div>
+                        <button class="reset-btn" id="resetBtn">Calculate Again</button>
+                    </div>
                 </div>
-            </div> -->
-            
-            <!-- <div class="bmi-info animate-on-scroll">
+            </div>
+            <div class="bmi-info animate-on-scroll">
                 <h2>Understanding BMI</h2>
                 <p>Body Mass Index (BMI) is a measure of body fat based on your weight in relation to your height. It's a useful screening tool to identify potential weight problems for adults.</p>
-                
+        
                 <div class="bmi-categories">
                     <div class="category-item">
                         <div class="category-color underweight"></div>
                         <h3>Underweight</h3>
-                        <p>BMI less than 18.5</p>
+                        <p>📊 BMI less than 18.5</p>
                     </div>
                     <div class="category-item">
                         <div class="category-color normal"></div>
                         <h3>Normal weight</h3>
-                        <p>BMI 18.5 - 24.9</p>
+                        <p>📊 BMI 18.5 - 24.9</p>
                     </div>
                     <div class="category-item">
                         <div class="category-color overweight"></div>
                         <h3>Overweight</h3>
-                        <p>BMI 25 - 29.9</p>
+                        <p>📊 BMI 25 - 29.9</p>
                     </div>
                     <div class="category-item">
                         <div class="category-color obese"></div>
                         <h3>Obese</h3>
-                        <p>BMI 30 or greater</p>
+                        <p>📊 BMI 30 or greater</p>
                     </div>
                 </div>
-                
+        
                 <div class="disclaimer">
-                    <h3>Important Note</h3>
+                    <h3>💡 Important Note</h3>
                     <p>BMI is a screening tool and does not directly measure body fat. It may not accurately reflect body fatness in athletes, older adults, or individuals with particularly muscular builds. For a comprehensive health assessment, please consult with our healthcare professionals.</p>
                 </div>
-            </div> -->
-
-
-            <div class="bmi-info animate-on-scroll">
-    <h2>Understanding BMI</h2>
-    <p>Body Mass Index (BMI) is a measure of body fat based on your weight in relation to your height. It's a useful screening tool to identify potential weight problems for adults.</p>
-    
-    <div class="bmi-categories">
-        <div class="category-item">
-            <div class="category-color underweight"></div>
-            <h3>Underweight</h3>
-            <p>📊 BMI less than 18.5</p>
-        </div>
-        <div class="category-item">
-            <div class="category-color normal"></div>
-            <h3>Normal weight</h3>
-            <p>📊 BMI 18.5 - 24.9</p>
-        </div>
-        <div class="category-item">
-            <div class="category-color overweight"></div>
-            <h3>Overweight</h3>
-            <p>📊 BMI 25 - 29.9</p>
-        </div>
-        <div class="category-item">
-            <div class="category-color obese"></div>
-            <h3>Obese</h3>
-            <p>📊 BMI 30 or greater</p>
-        </div>
-    </div>
-    
-        <div class="disclaimer">
-            <h3>💡 Important Note</h3>
-            <p>BMI is a screening tool and does not directly measure body fat. It may not accurately reflect body fatness in athletes, older adults, or individuals with particularly muscular builds. For a comprehensive health assessment, please consult with our healthcare professionals.</p>
-        </div>
-    </div>
+            </div>
         </div>
     </section>
 
@@ -198,13 +125,6 @@
                 <div class="footer-section">
                     <h3>WellSpring Family Clinic</h3>
                     <p>Your trusted community health partner since 2024. Providing comprehensive healthcare services for your entire family.</p>
-                    <!-- Optional Social Media
-                    <div class="footer-social">
-                        <a href="#" class="social-icon">📘</a>
-                        <a href="#" class="social-icon">📷</a>
-                        <a href="#" class="social-icon">🐦</a>
-                    </div>
-                    -->
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>

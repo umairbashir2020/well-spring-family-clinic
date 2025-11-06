@@ -31,43 +31,7 @@
     opacity: 0.9;
 }
 
-
-
-/* Hours Banner */
-/* .hours-banner {
-    background-color: var(--light-gray);
-    padding: 3rem 0;
-}
-
-.banner-content {
-    text-align: center;
-}
-
-.banner-content h2 {
-    margin-bottom: 1.5rem;
-}
-
-.hours-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.hour-item {
-    background: white;
-    padding: 1.5rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    display: flex;
-    justify-content: space-between;
-} */
-
-
-/* new code for banner starts */
-
-/* Enhanced Clinic Hours - Card Design */
+/* Clinic Hours - Card Design */
 .hours-banner {
     background-color: var(--light-gray);
     padding: 4rem 0;
@@ -222,58 +186,7 @@
     font-weight: 700;
 }
 
-/* Responsive Design */
-/* @media (max-width: 768px) {
-    .hours-banner {
-        padding: 3rem 0;
-    }
-    
-    .banner-content h2 {
-        font-size: 2rem;
-    }
-    
-    .hours-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        max-width: 400px;
-    }
-    
-    .hour-card {
-        padding: 2rem 1.5rem;
-    }
-    
-    .time-slot {
-        font-size: 1.2rem;
-    }
-} */
-
-/* @media (max-width: 480px) {
-    .hours-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .emergency-notice {
-        padding: 1rem 1.5rem;
-    }
-    
-    .emergency-notice p {
-        font-size: 1rem;
-    }
-} */
-/*  new code for banner ends */
-
 /* Featured Services */
-/* .featured-services {
-    padding: 5rem 0;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-} */
-
-/* Enhanced Featured Services */
 .featured-services {
     padding: 6rem 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
