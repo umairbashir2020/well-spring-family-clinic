@@ -20,12 +20,14 @@
 .hero-title {
     font-size: 3rem;
     margin-bottom: 1rem;
+    margin: 2rem;
     color: white;
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
+    margin: 2rem;
     opacity: 0.9;
 }
 
