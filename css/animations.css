@@ -1,4 +1,4 @@
-/* Animation Classes - SAFE VERSION */
+/* Animation Classes - */
 .animate-on-scroll {
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
